@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    direction: rtl;
+    margin:0;
+    background-color: rgba(178, 209, 237, 0.713);
+}

@@ -1,0 +1,20 @@
+div {
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(2, 2, 2, 0.687);
+    margin: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
+    gap: 0.5em;
+    transition: box-shadow 0.30s ease;
+}
+
+div:hover {
+    box-shadow: 5px 5px 5px 5px;
+    background-color: rgba(0, 8, 255, 0.302);
+    color: black;
+}
+
+p {
+    text-align: right;
+}
