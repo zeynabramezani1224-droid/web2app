@@ -12,6 +12,7 @@ import * as productPage2 from './+pages/+public/products-page/products-page';
 import { ProductPage } from './+pages/+private/product-page/product-page';
 import { ContactPage } from './+pages/+public/contact-page/contact-page';
 import { LoginPage } from './+pages/+public/login-page/login-page';
+import * as loginPage1 from './+pages/login-page/login-page';
 import { DashboardPage } from './+pages/+private/dashboard-page/dashboard-page';
 import { UsersPage } from './+pages/+private/users-page/users-page';
 import { OrderPage } from './+pages/+private/order-page/order-page';
@@ -22,14 +23,14 @@ export const routes: Routes = [
     { path: "bio", component: BioPage },
     { path: "about", component: AboutPage },
     { path: "abilities", component: AbilitPage },
-    
+    {path:'login1',component:loginPage1.LoginPage},
 
 
     {
         path: 'public', component: PublicTemplate, children: [
             { path: 'home2', component: homePage2.HomePage },
             { path: 'about2', component: aboutPage2.AboutPage },
-            { path: 'products', component:productPage2.ProductsPage},
+            { path: 'products', component: productPage2.ProductsPage },
             { path: 'contact', component: ContactPage },
             { path: 'login', component: LoginPage },
             { path: '', redirectTo: 'home', pathMatch: 'prefix' },
@@ -41,12 +42,12 @@ export const routes: Routes = [
         path: 'private', component: PrivateTemplate, children: [
             { path: 'dashbord', component: DashboardPage },
             { path: 'user', component: UsersPage },
-            { path: 'products', component:ProductPage },
-            {path:'order', component:OrderPage},
-            {path:'',redirectTo:'dashboard',pathMatch:'prefix'},
-            {path:'**',redirectTo:'home'}
+            { path: 'products', component: ProductPage },
+            { path: 'order', component: OrderPage },
+            { path: '', redirectTo: 'dashboard', pathMatch: 'prefix' },
+            { path: '**', redirectTo: 'home' }
         ]
     },
-{ path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];

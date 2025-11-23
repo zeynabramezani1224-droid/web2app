@@ -4,3 +4,15 @@ body{
     margin:0;
     background-color: rgba(178, 209, 237, 0.713);
 }
+@font-face {
+    font-family: persion;
+    src: url('/fonts/persion.woff2');
+}
+*{
+    font-family: persion;
+    font-size: 12px;
+}
+a{
+    min-width: 62px;
+    text-align: center;
+}
